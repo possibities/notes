@@ -1,21 +1,23 @@
 ﻿import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
   title: 'Notes',
   description: 'Knowledge base and documentation index',
   base: '/notes/',
   lastUpdated: true,
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/guide/getting-started' }
+      { text: '首页', link: '/' },
+      { text: '快速开始', link: '/guide/getting-started' },
+      { text: '内容发布', link: '/guide/content-publishing' }
     ],
     sidebar: [
       {
-        text: 'Guide',
+        text: '指南',
         items: [
-          { text: 'Getting Started', link: '/guide/getting-started' }
+          { text: '快速开始', link: '/guide/getting-started' },
+          { text: '文件加入知识库并上线', link: '/guide/content-publishing' }
         ]
       }
     ],
@@ -24,14 +26,14 @@ export default defineConfig({
     },
     outline: {
       level: [2, 3],
-      label: 'On this page'
+      label: '页面目录'
     },
     docFooter: {
-      prev: 'Previous',
-      next: 'Next'
+      prev: '上一页',
+      next: '下一页'
     },
     lastUpdated: {
-      text: 'Last updated'
+      text: '最后更新'
     },
     footer: {
       message: 'Built with VitePress',
